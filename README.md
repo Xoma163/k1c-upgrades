@@ -1,34 +1,43 @@
 # k1c-upgrades
 
-Klipper configs, mods, and upgrade notes for K1C
+Klipper configs, mods, and upgrade notes for the Creality K1C.
 
-## Что это?
+## О репозитории
 
-Этот репозиторий по сути персональная помойка под мои конфиги принтеров Creality K1C. Также я буду здесь записывать
-полезные моды и тонкости/нюансы их установки
+Этот репозиторий — моя личная база для хранения:
 
-Здесь не будет подробных инструкций по установке, только выжимка
+- конфигов принтера Creality K1C;
+- заметок по модификациям;
+- полезных ссылок;
+- нюансов установки и использования.
+
+Здесь нет подробных пошаговых инструкций — только краткие заметки и выжимка по тому, что оказалось полезным на практике.
 
 ## Прошивка
 
-[SimpleAF docs](https://pellcorp.github.io/creality-wiki/)
+- [SimpleAF docs](https://pellcorp.github.io/creality-wiki/)
+- Использую [Simple AF с Eddy NG](https://pellcorp.github.io/creality-wiki/eddyng/) и **Default** креплением
 
-Себе я поставил версию [Simple AF с Eddy NG](https://pellcorp.github.io/creality-wiki/eddyng/) с Default креплением
+### Почему SimpleAF
 
-Крайне рекомендую полностью избавиться от Creality прошивки и Creality-Helper-Script и перейти на независимую прошивку,
-где мы можем всё контроллировать
+Рекомендую отказаться от стоковой прошивки Creality и Creality Helper Script в пользу независимой прошивки, где можно полностью контролировать поведение принтера.
 
-Важно: если решите переходить на эту прошивку, то обязательно нужно иметь какой-либо картографический инструмент (напр.
-Eddy), т.к. SimpleAF не поддерживает работу с тензодатчиками
+### Важно
 
-Также я поставил себе этот
-скрипт [Purcell nozzle wipe](https://pellcorp.github.io/creality-wiki/nozzle_wipe/#purcell-nozzle-wipe)
+Если планируете переход на SimpleAF, вам понадобится картографический инструмент, например **Eddy**.
+
+SimpleAF **не поддерживает работу с тензодатчиками**, поэтому без альтернативного способа картографии не обойтись. 
+
+### Дополнительно
+
+Также использую скрипт:
+- [Purcell nozzle wipe](https://pellcorp.github.io/creality-wiki/nozzle_wipe/#purcell-nozzle-wipe)
 
 ## Конфиги Klipper под SimpleAF
 
-[Конфиги](config) лежат в этом же репозитории
+Конфиги лежат в папке [config](config).
 
-Все мои ручные изменения которые я сделал для себя отмечены комментарием `# custom andrewsha`
+Все мои ручные изменения отмечены комментарием: `# custom andrewsha`
 
 ## Печатные модификации
 
