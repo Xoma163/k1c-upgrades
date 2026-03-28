@@ -21,9 +21,14 @@ Klipper configs, mods, and upgrade notes for K1C
 Важно: если решите переходить на эту прошивку, то обязательно нужно иметь какой-либо картографический инструмент (напр.
 Eddy), т.к. SimpleAF не поддерживает работу с тензодатчиками
 
+Также я поставил себе этот скрипт [Purcell nozzle wipe](https://pellcorp.github.io/creality-wiki/nozzle_wipe/#purcell-nozzle-wipe)
+
 ## Конфиги Klipper под SimpleAF
 
 [Конфиги](config) лежат в этом же репозитории
+
+Все мои ручные изменения которые я сделал для себя отмечены комментарием `# custom andrewsha`
+
 
 ## Печатные модификации
 To Do
