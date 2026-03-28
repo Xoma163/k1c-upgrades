@@ -64,7 +64,7 @@ SimpleAF **не поддерживает работу с тензодатчик�
 - [Коннекторы JST PH 2.0мм 4pin (для подключения Eddy)](https://www.ozon.ru/product/jst-ph-2-0mm-4pin-kabel-s-razemom-30sm-razem-na-platu-jst-ph-4pin-5sht-1854551013/)
 - [Винты M3](https://www.ozon.ru/product/vint-m-3h16-s-potaynoy-golovkoy-din-965-100-sht-874104112/)
 - [Латунные втулки M3](https://www.ozon.ru/product/120-sht-m3x5-7-od4-6-rezba-s-nakatkoy-iz-latuni-s-rezboy-termostoykaya-termostoykaya-vstavka-1719174667/)
-- 
+
 ## Расходники
 
 - [Оригинальные печатные пластины](https://aliexpress.ru/item/1005006912703598.html)
@@ -79,3 +79,7 @@ SimpleAF **не поддерживает работу с тензодатчик�
 ## Полезные штучки
 
 - [Сушилка филамента Creality Space Pi Fillament Dryer Plus](https://aliexpress.ru/item/1005006458650443.html)
+
+## Полезные источники 
+
+- [Основная таблица с апгрейдами](https://docs.google.com/spreadsheets/d/1lo7YX4nkfYGhhncVtIryOvbDM4tTaRjzZT0Y3F5O7gI)
