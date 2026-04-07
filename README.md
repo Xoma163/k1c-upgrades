@@ -20,17 +20,19 @@ Klipper configs, mods, and upgrade notes for the Creality K1C.
 
 ### Почему SimpleAF
 
-Рекомендую отказаться от стоковой прошивки Creality и Creality Helper Script в пользу независимой прошивки, где можно полностью контролировать поведение принтера.
+Рекомендую отказаться от стоковой прошивки Creality и Creality Helper Script в пользу независимой прошивки, где можно
+полностью контролировать поведение принтера.
 
 ### Важно
 
 Если планируете переход на SimpleAF, вам понадобится картографический инструмент, например **Eddy**.
 
-SimpleAF **не поддерживает работу с тензодатчиками**, поэтому без альтернативного способа картографии не обойтись. 
+SimpleAF **не поддерживает работу с тензодатчиками**, поэтому без альтернативного способа картографии не обойтись.
 
 ### Дополнительно
 
 Также использую скрипт:
+
 - [Purcell nozzle wipe](https://pellcorp.github.io/creality-wiki/nozzle_wipe/#purcell-nozzle-wipe). Крепление LPF2
 
 ## Конфиги Klipper под SimpleAF
@@ -39,11 +41,67 @@ SimpleAF **не поддерживает работу с тензодатчик�
 
 Все мои ручные изменения отмечены комментарием: `# custom andrewsha`
 
+## Мёртвые зоны стола
+
+Для моего K1C есть несколько зон, которые надо исключать и в слайсере, и при настройке bed mesh.
+
+Исходные вводные:
+
+- заявленная область печати: `220x220`;
+- `0,0` — левый нижний угол стола;
+- хоуминг происходит в правом нижнем углу.
+
+### Какие зоны считаю unsafe
+
+1. Правая дальнаяя зона (датчик окончания филамента):
+    - `198,217`
+    - `229,213`
+    - для рабочей области `220x220` это даёт прямоугольник: `198..220 x 213..220`
+
+2. Зона по середине стола (щётка):
+    - `165,226`
+    - `165,206`
+    - `86,206`
+    - `86,226`
+    - для рабочей области `220x220` это даёт прямоугольник: `86..165 x 206..220`
+
+3. Левая мёртвая полоса (eddy датчик отъедает 3мм):
+    - если `x < 3`, печатать нельзя
+
+### OrcaSlicer
+
+В OrcaSlicer multiple exclusion areas нормально не поддерживаются, поэтому использую один связный полигон для
+`Excluded area`:
+
+```text
+0x220,220x220,220x213,198x213,198x220,165x220,165x206,86x206,86x220,3x220,3x0,0x0
+```
+
+Этот полигон исключает:
+
+- полосу `x < 3`;
+- щётку в зоне `86..165 x 206..220`;
+- правый дальний угол `198..220 x 213..220`.
+
+### Klipper bed_mesh
+
+Для `bed_mesh` логично задавать такие `faulty_region`:
+
+```ini
+faulty_region_1_min : 0,0
+faulty_region_1_max : 3,220
+faulty_region_2_min : 86,206
+faulty_region_2_max : 165,220
+faulty_region_3_min : 198,213
+faulty_region_3_max : 220,220
+```
+
 ## Печатные модификации
 
 - [Райзер](https://www.printables.com/model/951012-creality-k1-k1c-k1se-lid-riser-v3-frame-extension)
 - [Держатель сопливчика](щетки для чистки сопла)
-- [Откидной держатель сопливчика (щётки для чистки сопла)](https://www.printables.com/model/1023575-prowiper-for-creality-k1-series). LPF2 крепление - `V5 K1C BRUSH MOUNT FOR A1 BRUSHES.stl`
+- [Откидной держатель сопливчика (щётки для чистки сопла)](https://www.printables.com/model/1023575-prowiper-for-creality-k1-series).
+  LPF2 крепление - `V5 K1C BRUSH MOUNT FOR A1 BRUSHES.stl`
 - [Петли для дверцы](https://www.printables.com/model/916563-creality-k1-k1c-door-hinges-geared-print-in-place)
 - [Держатель трубки филамента для сушилки](https://www.printables.com/model/1022857-creality-space-pi-pfte-holder)
 - [Фильтр HEPA для выдувного кулера](https://www.printables.com/model/1618123-hepa-filter-case-for-creality-k1c)
@@ -80,6 +138,6 @@ SimpleAF **не поддерживает работу с тензодатчик�
 
 - [Сушилка филамента Creality Space Pi Fillament Dryer Plus](https://aliexpress.ru/item/1005006458650443.html)
 
-## Полезные источники 
+## Полезные источники
 
 - [Основная таблица с апгрейдами](https://docs.google.com/spreadsheets/d/1lo7YX4nkfYGhhncVtIryOvbDM4tTaRjzZT0Y3F5O7gI)
