@@ -211,3 +211,6 @@ G1 X5 Y0 F1200
 ## Полезные источники
 
 - [Основная таблица с апгрейдами](https://docs.google.com/spreadsheets/d/1lo7YX4nkfYGhhncVtIryOvbDM4tTaRjzZT0Y3F5O7gI)
+
+## TODO
+- Заменить variable_purge_start_y variable_purge_end_y с 212 на 215 когда заменю пластины
