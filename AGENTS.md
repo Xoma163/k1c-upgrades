@@ -53,7 +53,7 @@
 На момент анализа самые важные кастомизации такие:
 
 - в `printer.cfg` для `k1c #1` и `k1c #2` дополнительно подключены `advanced_nozzle_cleaner.cfg` и `custom.cfg`;
-- в `advanced_nozzle_cleaner.cfg` интегрирован Purcell nozzle wipe, текущая конфигурация щётки — **LPF2**, профиль принтера — **K1C**;
+- в `advanced_nozzle_cleaner.cfg` интегрирован Purcell nozzle wipe, текущая конфигурация щётки — **V5K1C**, профиль принтера — **K1C**;
 - в `eddyng.cfg` изменены `tap_target_z` и `tap_adjust_z` относительно дефолта;
 - в `start_end.cfg` подправлены parking/purge-параметры и отключено удержание нагретого стола после печати;
 - в `custom.cfg` хранятся индивидуальные `input_shaper` и PID для каждого из двух принтеров;

@@ -33,7 +33,7 @@ SimpleAF **не поддерживает работу с тензодатчик�
 
 Также использую скрипт:
 
-- [Purcell nozzle wipe](https://pellcorp.github.io/creality-wiki/nozzle_wipe/#purcell-nozzle-wipe). Крепление LPF2
+- [Purcell nozzle wipe](https://pellcorp.github.io/creality-wiki/nozzle_wipe/#purcell-nozzle-wipe). Крепление V5K1C
 
 ## Конфиги Klipper под SimpleAF
 
@@ -171,7 +171,7 @@ G1 X5 Y0 F1200
 - [Райзер](https://www.printables.com/model/951012-creality-k1-k1c-k1se-lid-riser-v3-frame-extension)
 - [Держатель сопливчика](щетки для чистки сопла)
 - [Откидной держатель сопливчика (щётки для чистки сопла)](https://www.printables.com/model/1023575-prowiper-for-creality-k1-series).
-  LPF2 крепление - `V5 K1C BRUSH MOUNT FOR A1 BRUSHES.stl`
+  V5K1C крепление - `V5 K1C BRUSH MOUNT FOR A1 BRUSHES.stl`
 - [Петли для дверцы](https://www.printables.com/model/916563-creality-k1-k1c-door-hinges-geared-print-in-place)
 - [Держатель трубки филамента для сушилки](https://www.printables.com/model/1022857-creality-space-pi-pfte-holder)
 - [Фильтр HEPA для выдувного кулера](https://www.printables.com/model/1618123-hepa-filter-case-for-creality-k1c)
