@@ -57,16 +57,19 @@ faulty_region_2_min: 0,205
 faulty_region_2_max: 220,220
 ```
 
-## KAMP / Smart Park
+### Где это лежит в конфиге сейчас
 
-Для `Smart Park` оставляю более консервативную верхнюю границу, чтобы парковка не подходила вплотную к зоне щётки:
+Текущая реализация в рабочих конфигах вынесена в override-слой:
 
-```ini
-variable_safe_min_x: 5
-variable_safe_max_x: 220
-variable_safe_min_y: 0
-variable_safe_max_y: 205
-```
+- `faulty_region_*` живут в `custom.cfg` внутри секции `[bed_mesh]`;
+- fixed purge / fixed smart park живут в `custom_macros.cfg` через `_SAF_LINE_PURGE` и `_SAF_SMART_PARK`;
+- сами fixed координаты хранятся в `_CUSTOM_ANDREWSHA_SETTINGS` внутри `custom.cfg`.
+
+Для обоих рабочих наборов сейчас используются такие fixed координаты purge/park:
+
+- старт purge / park: `X=85`, `Y=212`;
+- конец purge: `X=35`, `Y=212`;
+- после purge есть дополнительный безопасный уход в `X35 Y200`.
 
 ## Тестовый G-code для проверки границы
 
