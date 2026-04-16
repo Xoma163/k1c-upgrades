@@ -8,10 +8,9 @@
 - [Петли для дверцы](https://www.printables.com/model/916563-creality-k1-k1c-door-hinges-geared-print-in-place)
 - [Держатель трубки филамента для сушилки](https://www.printables.com/model/1022857-creality-space-pi-pfte-holder)
 - [Фильтр HEPA для выдувного кулера](https://www.printables.com/model/1618123-hepa-filter-case-for-creality-k1c)
-- [Держатель PTFE трубки на цепь](https://www.printables.com/model/1607752-creality-k1ck1k1-max-anti-binding-bowden-clip-loos)
-- [Райзер для цепи](https://www.printables.com/model/1218832-small-12mm-chain-riser-with-ptfe-tube-guide-for-cr)
 - [Полочка под принтер](https://www.printables.com/model/1114893-k1c-empty-tray)
-- [Крепление BTT Eddy](https://www.printables.com/model/1012524-btteddy-creality-k1-k1c-k1-max-mount)
+- [Крепление BTT Eddy](https://www.printables.com/model/1637215-remix-of-btteddy-creality-k1-k1c-k1-max-mount-to-w)
+- [Кабельная цепь](https://www.printables.com/model/1684322-cable-chain-for-k1k1c-with-ptfe-guide-increased-fo)
 
 ## Покупные модификации
 
