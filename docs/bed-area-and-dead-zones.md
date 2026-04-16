@@ -27,6 +27,10 @@
 
 ## OrcaSlicer
 
+### Print area
+Лучше использовать не список исключённых областей, а готовый SVG: [orca-print-area.svg](orca-print-area.svg)
+
+### Exclude area
 В OrcaSlicer `multiple exclusion areas` нормально не поддерживаются, поэтому использую один связный полигон для `Excluded area`:
 
 ```text
@@ -98,7 +102,7 @@ G1 X5 Y0 F1200
 
 ## Тестовая STL-рамка по боевой границе
 
-В репозитории лежит готовая модель: [`dead-zone-boundary-frame.stl`](../dead-zone-boundary-frame.stl)
+В репозитории лежит готовая модель: [`dead-zone-boundary-frame.stl`](dead-zone-boundary-frame.stl)
 
 Что это такое:
 
